@@ -2,6 +2,7 @@
 
 First project for the freeCodeCamp Responsive Web Design certification course.
 
+Background photo is by Obregonia D Toretto from pexels.com
 
 Outline
 
