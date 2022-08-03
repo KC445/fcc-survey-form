@@ -4,6 +4,7 @@ body {
     background-image: url("images/background-photo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    font-size: 18px;
 }
 
 .header {
@@ -14,26 +15,54 @@ body {
 
 label {
     display: block;
+    margin: 5px 0;
 }
 
 form {
     width: 50%;
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: #22333bca;
     color: #EAE0D5;
     border-radius: 10px;
+    padding: 2rem;
 }
 
 fieldset {
     border: none;
+    margin: 0;
+    padding: 0 10%;
+}
+
+fieldset:first-of-type {
+    padding-top: 2.5%;
+}
+
+fieldset:last-of-type {
+    padding-bottom: 2.5%;
 }
 
 input,
 select,
 textarea {
     width: 100%;
+    margin: 5px 0;
+    min-height: 2em;
 }
 
 .inline {
     width: unset;
+    vertical-align: middle;
+    margin: 0 0.5rem 0 0;
+    border: none;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: .5rem auto;
+    min-width: 300px;
+}
+
+p {
+    margin: 5px 0;
 }
