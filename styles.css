@@ -47,6 +47,7 @@ textarea {
     width: 100%;
     margin: 5px 0;
     min-height: 2em;
+    margin-bottom: 15px;
 }
 
 .inline {
@@ -56,13 +57,22 @@ textarea {
     border: none;
 }
 
-input[type="submit"] {
+button {
     display: block;
     width: 60%;
     margin: .5rem auto;
-    min-width: 300px;
+    min-width: 25%;
+    border: 2px solid #C6AC8F;
+    background-color: #EAE0D5;
+    color: #5E503F;
+    font-size: 1.10rem;
 }
 
 p {
     margin: 5px 0;
+}
+
+.genre,
+.num-movies {
+    margin-bottom: 15px;
 }

@@ -11,20 +11,21 @@
 
 <body>
     <div class="header">
-        <h1>Film Survey</h1>
-        <p>Please fill out this short survey about your film preferences and receive a $10 giftcard!</p>
+        <h1 id="title">Film Survey</h1>
+        <p id="description">Please fill out this short survey about your film preferences and receive a $10 giftcard!
+        </p>
     </div>
-    <form action="_blank">
+    <form action="_blank" id="survey-form">
         <fieldset>
             <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name">
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Enter your email">
-                <label for="age">Age (optional)</label>
-                <input type="number" id="age" placeholder="Age" min="13" max="110">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <label for="number" id="number-label">Age (optional)</label>
+                <input type="number" id="number" placeholder="Age" min="13" max="110">
                 <label for="gender">Please select your gender:</label>
-                <select name="gender" id="gender">
+                <select name="gender" id="dropdown">
                     <option value="">(select one)</option>
                     <option value="female">Female</option>
                     <option value="male">Male</option>
@@ -34,7 +35,7 @@
             </div>
         </fieldset>
         <fieldset>
-            <div>
+            <div class="num-movies">
                 <p>How many movies do you watch each week?</p>
                 <label for="0-5"><input type="radio" name="num-movies" value="0-5" id="0-5" class="inline" selected>
                     0-5</label>
@@ -54,7 +55,7 @@
                     <option value="other">Other</option>
                 </select>
             </div>
-            <div>
+            <div class="genre">
                 <p>What movie genres do you prefer? (Check all that apply)</p>
                 <label for="action"><input type="checkbox" value="action" id="action" class="inline">
                     Action</label>
@@ -74,10 +75,10 @@
                     Thriller</label>
             </div>
             <label for="comments">Please add any additional comments below</label>
-            <textarea name="comments" id="comments" cols="30" rows="10"
+            <textarea name="comments" id="comments" cols="30" rows="5"
                 placeholder="Enter your comments here..."></textarea>
         </fieldset>
-        <input type="submit" value="Submit">
+        <button type="submit" id="submit">Submit Survey</button>
     </form>
 </body>
 
